@@ -9,92 +9,93 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 </head>
 <body>
-    <header class=" mh-80px ">
-        <nav class="navbar navbar-expand-lg bg-body-tertiary ">
-            <div class="container-fluid ">
-              <a class="navbar-brand" href="#">
-                <img  class="img-fluid" src="./assest/img/mobile-logo.png" height="50px" width="50px" alt="">
+    <header class="first" style="height: 80px;">
+      <nav class="navbar navbar-expand-lg bg-white flex-nowrap">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img class="img-fluid d-lg-none" src="./assest/img/mobile-logo.png" width="50" height="50" alt="">
+            <img class="img-fluid d-none d-lg-block" src="./assest/img/logo.svg" alt="">
+          </a>
+            <form class="d-flex bg-secondary-subtle w-100 rounded" role="search">
+              <div class="input-group ">
+                <span class="input-group-text bg-secondary-subtle" id="basic-addon1">
+                  <i class="bi bi-search"></i>
+                </span>
+                <input type="search" class="form-control bg-secondary-subtle" placeholder="Prova a cercare:lezione di Laravel " aria-label="Username" aria-describedby="basic-search">
+              </div>
+            </form>
+
+            <ul class="navbar-nav flex-nowrap mb-2 mb-lg-0 d-flex flex-row">
+              <li class="nav-item d-none d-lg-block">
+                <a class="nav-link text-secondary" aria-current="page" href="#"><i class="bi bi-list-ul"></i></a>
+              </li>
+              <li class="nav-item d-none d-lg-block">
+                <a class="nav-link text-secondary" href="#"><i class="bi bi-question-circle-fill"></i></a>
+              </li>
+              <li class="nav-item d-none d-lg-block">
+                <a class="nav-link disabled" aria-disabled="true"> <i class="bi bi-three-dots-vertical"></i></a>
+              </li>
+    
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown text-warning" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <i class="bi bi-bell-fill"></i>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              
+              
+            </ul>
+          </div>
+        </div>
+      </nav>
+     
+    </header>
+    <main style="height: calc(100vh - 80px ) ;">
+      <section class="">
+        <div class="position-relative ">
+          <div class="d-flex sidebar position-absolute  top-0 start-0 flex-column flex-shrink-0 bg-dark " style="width: fit-content; height: calc(100vh - 80px ); border: 2px solid violet">
+           
+            <ul class="nav flex-column mb-auto text-center">
+             
+              <li class="nav-item  ">
+                <a href="#" class="nav-link py-3  rounded-0  text-light d-flex align-items-center gap-2"  data-bs-placement="right" aria-label="Dashboard" data-bs-original-title="Dashboard">
+                  <i class="bi bi-house-door-fill"></i>                
+                  <span class="text-light text-capitalize d-none d-lg-block "> home</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link py-3  rounded-0  text-light d-flex align-items-center gap-2"  data-bs-placement="right" aria-label="Orders" data-bs-original-title="Orders" aria-describedby="tooltip813209">
+                  <i class="bi bi-bar-chart-line-fill"></i>
+                <span class="text-light text-capitalize d-none d-lg-block"> stats</span>
+              </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link py-3  rounded-0  text-light d-flex align-items-center gap-2"  data-bs-placement="right" aria-label="Products" data-bs-original-title="Products">
+                  <i class="bi bi-reception-4"></i> 
+                  <span class="text-light text-capitalize d-none d-lg-block"> signal</span>
+                </a>
+              </li>
+             
+            </ul>
+            <div class="dropdown border-top ">
+              <a href="#" class="d-flex align-items-center text-light justify-content-center p-3 link-body-emphasis text-decoration-none gap-2 " >
+                <i class="bi bi-gear-fill"></i>
+                <span class="d-none d-lg-block">Admin</span>
               </a>
               
-              <div class="bd-search w-150" id="docsearch" data-bd-docs-version="5.3"><button type="button" class="DocSearch DocSearch-Button" aria-label="Search">
-                <span class="DocSearch-Button-Container">
-                    <svg width="20" height="40" class="DocSearch-Search-Icon" viewBox="0 0 20 20">
-                        <path d="M14.386 14.386l4.0877 4.0877-4.0877-4.0877c-2.9418 2.9419-7.7115 2.9419-10.6533 0-2.9419-2.9418-2.9419-7.7115 0-10.6533 2.9418-2.9419 7.7115-2.9419 10.6533 0 2.9419 2.9418 2.9419 7.7115 0 10.6533z" stroke="currentColor" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path>
-                </svg>
-                <span class="DocSearch-Button-Placeholder">Prova a ceracare:Lezione di lavarel</span>
-              </div>
-          
-            </div>
-          </nav>
-
-          
-        
-           
-
-    </header>
-<main>
-    <section class="sidebar w-calc(100vh-80px) w-50px">
-        <div class="d-flex flex-column flex-shrink-0 p-3 bg-light" style="width: 280px;">
-            <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
-              <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
-              <span class="fs-4">Sidebar</span>
-            </a>
-            <hr>
-            <ul class="nav nav-pills flex-column mb-auto">
-              <li class="nav-item">
-                <a href="#" class="nav-link active" aria-current="page">
-                  <svg class="bi me-2" width="16" height="16"><use xlink:href="#home"></use></svg>
-                  Home
-                </a>
-              </li>
-              <li>
-                <a href="#" class="nav-link link-dark">
-                  <svg class="bi me-2" width="16" height="16"><use xlink:href="#speedometer2"></use></svg>
-                  Dashboard
-                </a>
-              </li>
-              <li>
-                <a href="#" class="nav-link link-dark">
-                  <svg class="bi me-2" width="16" height="16"><use xlink:href="#table"></use></svg>
-                  Orders
-                </a>
-              </li>
-              <li>
-                <a href="#" class="nav-link link-dark">
-                  <svg class="bi me-2" width="16" height="16"><use xlink:href="#grid"></use></svg>
-                  Products
-                </a>
-              </li>
-              <li>
-                <a href="#" class="nav-link link-dark">
-                  <svg class="bi me-2" width="16" height="16"><use xlink:href="#people-circle"></use></svg>
-                  Customers
-                </a>
-              </li>
-            </ul>
-            <hr>
-            <div class="dropdown">
-              <a href="#" class="d-flex align-items-center link-dark text-decoration-none dropdown-toggle" id="dropdownUser2" data-bs-toggle="dropdown" aria-expanded="false">
-                <img src="https://github.com/mdo.png" alt="" width="32" height="32" class="rounded-circle me-2">
-                <strong>mdo</strong>
-              </a>
-              <ul class="dropdown-menu text-small shadow" aria-labelledby="dropdownUser2">
-                <li><a class="dropdown-item" href="#">New project...</a></li>
-                <li><a class="dropdown-item" href="#">Settings</a></li>
-                <li><a class="dropdown-item" href="#">Profile</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Sign out</a></li>
-              </ul>
             </div>
           </div>
-    </section>
-</main>
-
-
-
-
-
-
+        </div>
+        
+      </section>
+      
+        
+      
+    </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 </body>
 </html>

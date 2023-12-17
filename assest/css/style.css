@@ -3,8 +3,14 @@
     padding: 0;
     box-sizing: border-box;
 }
-header {border:1px solid red
+main{
+ border: 2px solid blue;
+}
+.second {
+    border: 2px solid red;
 }
 .sidebar{
- border: 2px solid blue;
+    background-image: url(../img/sidebar-bg.png);
+    background: no-repeat;
+    background-position: center;
 }
