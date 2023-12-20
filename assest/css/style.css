@@ -1,16 +1,14 @@
-*{
-    margin: 0 auto;
-    padding: 0;
-    box-sizing: border-box;
-}
+
+
 main{
  border: 2px solid blue;
-}
-.second {
-    border: 2px solid red;
 }
 .sidebar{
     background-image: url(../img/sidebar-bg.png);
     background: no-repeat;
     background-position: center;
+    --width-sidebar: fit-content;
+}
+header{
+    height: 80px;
 }
